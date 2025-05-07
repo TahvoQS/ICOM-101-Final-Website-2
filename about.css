@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* COLORS USED */
+
+/* rgba(0, 0, 0, 0.3) Menu Bar */
+/* rgb(153, 153, 153) Light Grey */
+/* rgb(26, 26, 26) Dark Grey */
+
+
+/* MENU BAR */
+
+.MenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+   height: 50px;
+   gap: 10%;
+   font-family: 'Nunito';
+}
+
+.Home {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Home:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Portfolio {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Portfolio:hover {
+    color: rgb(153, 153, 153);
+}
+
+.About {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.About:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Contact {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Contact:hover {
+    color: rgb(153, 153, 153);
+}
+
+
+/* ABOUT  */
+
+.Bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://i.imgur.com/u3QQivV.jpeg') center/cover no-repeat;
+}
+
+.BioContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+.BioContent h1 {
+font-size: 36px;
+padding-bottom: 2px;
+font-family: 'Andata';
+}
+
+.BioContent h2 {
+font-size: 20px;
+padding-bottom: 30px;
+font-family: 'Nunito';
+}
+
+.BioContent p {
+font-size: 16px;
+font-family: 'Nunito';
+}
+
+
+/* FOOTER */
+
+.Footer {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Nunito';
+}
+
+.FooterContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 40%;
+}
+
+.Instagram p {
+    color: white;
+    font-weight: bold;
+}
+
+.Instagram a {
+    text-decoration: underline;
+    color: white;
+}
+
+.PrivacyPol a {
+    text-decoration: underline;
+    color: white;
+}
+
+.Footer p {
+    color: white;
+    padding-top: 20px;
+}

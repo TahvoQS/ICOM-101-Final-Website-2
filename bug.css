@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* COLORS USED */
+
+/* rgba(0, 0, 0, 0.3) Menu Bar */
+/* rgb(153, 153, 153) Light Grey */
+/* rgb(26, 26, 26) Dark Grey */
+
+
+/* MENU BAR */
+
+.MenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+   height: 50px;
+   gap: 10%;
+   font-family: 'Nunito';
+}
+
+.Home {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Home:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Portfolio {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Portfolio:hover {
+    color: rgb(153, 153, 153);
+}
+
+.About {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.About:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Contact {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Contact:hover {
+    color: rgb(153, 153, 153);
+}
+
+
+/* TITLE */
+
+.Title {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 100vw;
+}
+
+.Title::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(26, 26, 26);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.Title h1 {
+    font-size: 60px;
+    font-family: 'Andada';
+}
+
+.Title h2 {
+    font-size: 20px;
+    font-family: 'Andada';
+}
+
+.Description {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 800px;
+    font-family: 'Nunito';
+}
+
+
+/* PHOTOS/VIDEOS */
+
+.Media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.Photo1 img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 2px rgb(26, 26, 26);
+    border-radius: 20px;
+}
+
+.Photo1 p {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+.Photo2 img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 2px rgb(26, 26, 26);
+    border-radius: 20px;
+}
+
+.Photo2 p {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+
+
+/* FOOTER */
+
+.Footer {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Nunito';
+}
+
+.FooterContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 40%;
+}
+
+.Instagram p {
+    color: white;
+    font-weight: bold;
+}
+
+.Instagram a {
+    text-decoration: underline;
+    color: white;
+}
+
+.PrivacyPol a {
+    text-decoration: underline;
+    color: white;
+}
+
+.Footer p {
+    color: white;
+    padding-top: 20px;
+}

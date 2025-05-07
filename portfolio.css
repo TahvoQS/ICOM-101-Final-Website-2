@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* COLORS USED */
+
+/* rgba(0, 0, 0, 0.3) Menu Bar */
+/* rgb(153, 153, 153) Light Grey */
+/* rgb(26, 26, 26) Dark Grey */
+
+
+/* MENU BAR */
+
+.MenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+   height: 50px;
+   gap: 10%;
+   font-family: 'Nunito';
+}
+
+.Home {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Home:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Portfolio {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Portfolio:hover {
+    color: rgb(153, 153, 153);
+}
+
+.About {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.About:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Contact {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Contact:hover {
+    color: rgb(153, 153, 153);
+}
+
+
+/* PORTFOLIO CARDS */
+
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Title {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 100vw;
+    font-size: 30px;
+    font-family: 'Andada';
+}
+
+.Title::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(26, 26, 26);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* CARDS */
+
+.Card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    width: 90vw;          
+    max-width: 800px;          
+    margin: 20px auto;         
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    font-family: 'Nunito';
+}
+
+.Card1:hover {
+    transform: translateY(-5px);
+}
+
+.Card1 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.Card1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.Card1 p {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.Card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    width: 90vw;          
+    max-width: 800px;          
+    margin: 20px auto;         
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    font-family: 'Nunito';
+}
+
+.Card2:hover {
+    transform: translateY(-5px);
+}
+
+.Card2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.Card2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.Card2 p {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+.Footer {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Nunito';
+}
+
+.FooterContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 40%;
+}
+
+.Instagram p {
+    color: white;
+    font-weight: bold;
+}
+
+.Instagram a {
+    text-decoration: underline;
+    color: white;
+}
+
+.PrivacyPol a {
+    text-decoration: underline;
+    color: white;
+}
+
+.Footer p {
+    color: white;
+    padding-top: 20px;
+}

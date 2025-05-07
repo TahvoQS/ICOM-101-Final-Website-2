@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* COLORS USED */
+
+/* rgba(0, 0, 0, 0.3) Menu Bar */
+/* rgb(153, 153, 153) Light Grey */
+/* rgb(26, 26, 26) Dark Grey */
+
+
+/* MENU BAR */
+
+.MenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+   height: 50px;
+   gap: 10%;
+   font-family: 'Nunito';
+}
+
+.Home {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Home:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Portfolio {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Portfolio:hover {
+    color: rgb(153, 153, 153);
+}
+
+.About {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.About:hover {
+    color: rgb(153, 153, 153);
+}
+
+.Contact {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.Contact:hover {
+    color: rgb(153, 153, 153);
+}
+
+
+/* SECTION 1 */
+
+.Section1 {
+    position: relative;
+    background: url('https://i.imgur.com/u3QQivV.jpeg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeadingText {
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.HeadingText h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Andada';
+}
+
+.HeadingText h2 {
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+.Button {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(26, 26, 26);
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Nunito';
+}
+
+.Button:hover {
+    background-color: rgb(153, 153, 153);
+}
+
+
+/* RECENT WORK */
+
+.TitleText {
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: 'Andada';
+}
+
+.TitleText h3 {
+    font-size: 36px;
+    color: black;
+}
+
+.TitleText h3::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(26, 26, 26);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.Images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Nunito';
+}
+
+.Images a {
+    max-width: 600px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.Images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.Image1 img {
+    border: 3px solid;
+    border-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Image1 img:hover {
+    transform: scale(1.05);
+}
+
+.Image2 img {
+    border: 3px solid;
+    border-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Image2 img:hover {
+    transform: scale(1.05);
+}
+
+.Images p {
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.ViewAll {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 60px;
+    font-family: 'Nunito';
+}
+
+.ViewAll a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(26, 26, 26);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ViewAll a:hover {
+    background-color: rgb(153, 153, 153);
+}
+
+
+/* FOOTER */
+
+.Footer {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Nunito';
+}
+
+.FooterContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 40%;
+}
+
+.Instagram p {
+    color: white;
+    font-weight: bold;
+}
+
+.Instagram a {
+    text-decoration: underline;
+    color: white;
+}
+
+.PrivacyPol a {
+    text-decoration: underline;
+    color: white;
+}
+
+.Footer p {
+    color: white;
+    padding-top: 20px;
+}

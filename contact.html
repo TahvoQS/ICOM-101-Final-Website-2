@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homepage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+
+        <script src="script.js" async defer></script>
+
+        <!-- Menu Bar -->
+        <header class="MenuBar">
+            <a href="index.html" class="Home">Home</a>
+            <a href="portfolio.html" class="Portfolio">Portfolio</a>
+            <a href="about.html" class="About">About</a>
+            <a href="contact.html" class="Contact">Contact</a>
+        </header>
+
+        <!-- Title -->
+         <div class="ContactPage">
+            <div class="Title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="ContactForm">
+                <form
+                    action="https://formspree.io/f/{FORM_ID}"
+                    class="fs-form"
+                    target="_top"
+                    method="POST">
+                    <div class="fs-field">
+                    <label class="fs-label" for="name">Your Name</label>
+                    <input class="fs-input" id="name" name="name" required />
+                    </div>
+                    <div class="fs-field">
+                    <label class="fs-label" for="email">Email</label>
+                    <input class="fs-input" id="email" name="email" required />
+                    <p class="fs-description">
+                        This will help me respond to your query via an email.
+                    </p>
+                    </div>
+                    <div class="fs-field">
+                    <label class="fs-label" for="message">Message</label>
+                    <textarea
+                        class="fs-textarea"
+                        id="message"
+                        name="message"
+                        required
+                    ></textarea>
+                    <p class="fs-description">What would you like to discuss?</p>
+                    </div>
+                    <div class="fs-button-group">
+                    <button class="fs-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+  
+
+            <!-- Footer -->
+        <footer class="Footer">
+                <div class="FooterContent">
+                    <div class="Instagram"> 
+                     <p>Instagram</p>
+                        <a href="https://www.instagram.com/bby.croissant?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr">@bby.croissant</a>
+                    </div>
+
+                    <div class="PrivacyPol">
+                        <a href="https://www.privacypolicygenerator.info">Privacy Policy</a>
+                    </div>
+                </div>
+            <p>© 2025 Tahvo Stephan. All rights reserved.</p>
+        </footer>
+    
+        
+    </body>
+</html>
